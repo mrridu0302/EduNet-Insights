@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Engagement Report</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Total Engagement Report</h1>
+  <p>Location: Bangalore, Karnataka, India</p>
+  <p>Date: <span id="date"></span></p>
+  <p>Total Time Spent: <span id="total-time"></span> seconds</p>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Action (URL)</th>
+      <th>Duration</th>
+      <th>Scroll Depth</th>
+    </tr>
+    <tbody id="engagement-table"></tbody>
+  </table>
+</body>
+<script src="popup.js"></script>
+</html>
