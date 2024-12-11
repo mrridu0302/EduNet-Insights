@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Swayam Engagement Tracker",
+  "version": "1.0",
+  "description": "Tracks engagement metrics for Swayam website.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://swayam.gov.in/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://swayam.gov.in/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
